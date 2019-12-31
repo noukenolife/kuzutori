@@ -1,0 +1,6 @@
+{
+  "name": "kuzutori",
+  "version": "1.0",
+  "description": "Extracts breadcrumbs in web pages",
+  "manifest_version": 2
+}
