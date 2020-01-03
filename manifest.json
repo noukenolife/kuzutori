@@ -2,5 +2,16 @@
   "name": "kuzutori",
   "version": "1.0",
   "description": "Extracts breadcrumbs in web pages",
-  "manifest_version": 2
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "run_at": "document_idle",
+      "js": ["content.js"]
+    }
+  ]
 }
